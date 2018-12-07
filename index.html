@@ -12,14 +12,24 @@
     img{
       max-width : 100%;
       vertical-align : top;
+      /* display : none; */
+    }
+    img#responsive{
+      display : none;
+    }
+    @media screen and (max-width: 768px)
+    {
+      img#responsive{
+        display : block;
+      }
     }
   </style>
 </head>
 <body>
+  <img src = "imagenes/imagenresponsive.webp" id="responsive"/>
   <img src = "imagenes/003.jpg"/>
   <img src = "imagenes/005.jpg"/>
   <img src = "imagenes/001.jpg"/>
   <img src = "imagenes/002.jpg"/>
-
 </body>
 </html>
